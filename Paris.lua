@@ -10388,12 +10388,12 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'بلال' or text == 'المبرمج بلال' or text == 'مطور السورس' or text == 'المطور بلال' then
-photo = "https://t.me/Belalelshayal"
-local Name = '𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝒀𝑶𝒁𝑨𝑹𝑻 𝐁𝐄𝑳𝐀𝑳🇫🇷 '
+photo = "https://t.me/CVISLAM"
+local Name = 'WELCOME'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓄼• 𝗕𝗘𝗟𝗔𝗟 ➪🇫🇷 •𓄹', url = "https://t.me/Belalelshayal"}
+{text = '𓄼• ANTITHON •𓄹', url = "https://t.me/CVISLAM"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -12472,8 +12472,8 @@ name = string.gsub(name,"✨","💫💫💫💫💫✨💫💫💫💫")
 name = string.gsub(name,"⛈","🌨🌨🌨🌨🌨⛈🌨🌨🌨🌨")
 name = string.gsub(name,"🌥","⛅️⛅️⛅️⛅️⛅️⛅️🌥⛅️⛅️⛅️⛅️")
 name = string.gsub(name,"⛄️","☃☃☃☃☃☃⛄️☃☃☃☃")
-name = string.gsub(name,"👨‍🔬","??‍??👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬??‍🔬👩‍🔬👩‍🔬👩‍🔬")
-name = string.gsub(name,"👨‍💻","👩‍💻👩‍‍💻👩‍‍💻👨‍💻💻👩‍💻👩‍💻")
+name = string.gsub(name,"👨‍🔬","??‍??👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬👩‍🔬")
+name = string.gsub(name,"👨‍💻","👩‍💻??‍‍💻👩‍‍💻👨‍💻💻👩‍💻👩‍💻")
 name = string.gsub(name,"👨‍🔧","👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👨‍🔧👩‍🔧")
 name = string.gsub(name,"👩‍🍳","👨‍🍳👨‍🍳👨‍🍳👨‍🍳??‍🍳👩‍🍳👨‍🍳👨‍🍳👨‍🍳")
 name = string.gsub(name,"🧚‍♀","🧚‍♂🧚‍♂🧚‍♂🧚‍♂🧚‍♀🧚‍♂🧚‍♂")
