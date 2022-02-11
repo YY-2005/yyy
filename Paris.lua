@@ -104,7 +104,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,5234373314,1183747742,1554085475,1761050341,5076237918}  
+local ListSudos ={Sudo_Id,5269799954,000000000,000000000,000000000,000000000}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -123,15 +123,15 @@ Managers = Redis:sismember(paris.."paris:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(paris.."paris:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(paris.."paris:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 5234373314 then
+if UserId == 5269799954 then
 Status = 'المبرمج انتيثون'
-elseif UserId == 1183747742 then  
+elseif UserId == 000000000 then  
 Status = 'المبرمج عزايزي'
-elseif UserId == 1554085475 then  
+elseif UserId == 000000000 then  
 Status = 'المبرمج صاصا'
-elseif UserId == 1761050341 then  
+elseif UserId == 000000000 then  
 Status = 'جوو'
-elseif UserId == 5076237918 then  
+elseif UserId == 000000000 then  
 Status = 'كومندا'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -708,15 +708,15 @@ Managers = Redis:sismember(paris.."paris:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(paris.."paris:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(paris.."paris:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 5234373314 then
+if UserId == 5269799954 then
 Status = true
-elseif UserId == 1183747742 then  
+elseif UserId == 000000000 then  
 Status = true
-elseif UserId == 1554085475 then  
+elseif UserId == 000000000 then  
 Status = true
-elseif UserId == 1761050341 then  
+elseif UserId == 000000000 then  
 Status = true
-elseif UserId == 5076237918 then  
+elseif UserId == 000000000 then  
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -753,15 +753,15 @@ Managers = Redis:sismember(paris.."paris:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(paris.."paris:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(paris.."paris:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 5234373314 then
+if UserId == 5269799954 then
 Status = true
-elseif UserId == 1183747742 then    
+elseif UserId == 000000000 then    
 Status = true
-elseif UserId == 1554085475 then    
+elseif UserId == 000000000 then    
 Status = true
-elseif UserId == 1761050341 then    
+elseif UserId == 000000000 then    
 Status = true
-elseif UserId == 5076237918 then    
+elseif UserId == 000000000 then    
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -913,7 +913,7 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 5234373314 then
+if tonumber(msg.sender.user_id) == 5269799954 then
 msg.Name_Controller = 'المبرمج انتيثون'
 msg.The_Controller = 1
 elseif tonumber(msg.sender.user_id) == 00000000 then
@@ -10376,7 +10376,7 @@ local Name = '[⋆ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ  ANTITHON  ⋆](t.me/BU_QH)\n\n[�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𖣴• ᴍʏ ᴅᴇᴠ •𖣴 ', url = "https://t.me/CVISLAM"},{text = '𖣴• ᴄʜᴀɴɴᴇʟ •𖣴', url = "https://t.me/BU_QH"},
+{text = '𖣴• ᴍʏ ᴅᴇᴠ •𖣴 ', url = "https://t.me/TU_WM"},{text = '𖣴• ᴄʜᴀɴɴᴇʟ •𖣴', url = "https://t.me/BU_QH"},
 },
 {
 {text =first_name,url = "https://t.me/"..user_info.username..""}, 
@@ -10388,17 +10388,17 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'اسلام' or text == 'المبرمج انتيثون' or text == 'مطور السورس' or text == 'المطور اسلام' then
-photo = "https://t.me/CVISLAM"
-local Name = 'WELCOME'
+photo = "https://t.me/TU_WM"
+local Name = 'اصلام حزين 😔'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𖣴• ANTITHON •𖣴', url = "https://t.me/CVISLAM"}
+{text = '𖣴• ANTITHON •𖣴', url = "https://t.me/TU_WM"}
 },
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-elseif text == 'العزايزي' or text == 'المبرمج عزايزي' or text == 'عزايزي' then
+elseif text == '' or text == '' or text == 'عزايزي' then
 photo = "https://t.me/php_7"
 local Name = '𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝒀𝑶𝒁𝑨𝑹𝑻 𝐀𝐙𝐀𝐈𝐙𝐘‌🇫🇷 '
 keyboard = {} 
@@ -10410,12 +10410,12 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'مطور' or text == 'ديف' then
-photo = "https://t.me/CVISLAM"
+photo = "https://t.me/TU_WM"
 local Name = 'المطور انتيثون حزين 😔 '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𖣴• 𝐴𝑁𝑇𝐼𝑇𝐻𝑂𝑁  •𖣴', url = "https://t.me/CVISLAM"}
+{text = '𖣴• 𝐴𝑁𝑇𝐼𝑇𝐻𝑂𝑁  •𖣴', url = "https://t.me/TU_WM"}
 },
 }
 local msgg = msg_id/2097152/0.5
