@@ -2294,13 +2294,13 @@ return LuaTele.sendText(msg_chat_id,msg_id,' ✯ الملف لا يدعم هاذ
 end
 end
 end
-if text == 'تحديث السورس' or text == '〘 تحديث السورس 〙' then
+if text == 'تحديث السورس' or text == '〘 تحديث سورس انتيثون 〙' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ✯ هاذا الامر يخص 〘 '..Controller_Num(1)..' 〙* ',"md",true)  
 end
 --os.execute('rm -rf paris.lua')
---download('https://github.com/VERSON-2005/ANTITHON/master/paris.lua','paris.lua')
-return LuaTele.sendText(msg_chat_id,msg_id,'\n* ✯ تم تحديث السورس * ',"md",true)  
+--download('https://raw.githubusercontent.com/VERSON-2005/ANTITHON/master/paris.lua','paris.lua')
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* ✯ تم تحديث سورس انتيثون بنجاح* ',"md",true)  
 end
 if text == '〘 تعطيل الاذاعه 〙' or text == 'تعطيل الاذاعه' then
 if not msg.ControllerBot then 
