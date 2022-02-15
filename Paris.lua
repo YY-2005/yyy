@@ -104,7 +104,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,5269799954,000000000,000000000,000000000,000000000}  
+local ListSudos ={Sudo_Id,5246153486,000000000,000000000,000000000,000000000}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -123,7 +123,7 @@ Managers = Redis:sismember(paris.."paris:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(paris.."paris:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(paris.."paris:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 5269799954 then
+if UserId == 5246153486 then
 Status = 'المبرمج انتيثون'
 elseif UserId == 000000000 then  
 Status = 'المبرمج عزايزي'
@@ -708,7 +708,7 @@ Managers = Redis:sismember(paris.."paris:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(paris.."paris:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(paris.."paris:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 5269799954 then
+if UserId == 5246153486 then
 Status = true
 elseif UserId == 000000000 then  
 Status = true
@@ -753,7 +753,7 @@ Managers = Redis:sismember(paris.."paris:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(paris.."paris:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(paris.."paris:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 5269799954 then
+if UserId == 5246153486 then
 Status = true
 elseif UserId == 000000000 then    
 Status = true
@@ -913,7 +913,7 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 5269799954 then
+if tonumber(msg.sender.user_id) == 5246153486 then
 msg.Name_Controller = 'المبرمج انتيثون'
 msg.The_Controller = 1
 elseif tonumber(msg.sender.user_id) == 00000000 then
