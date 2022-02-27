@@ -10388,7 +10388,7 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'اسلام' or text == 'المبرمج انتيثون' or text == 'مطور السورس' or text == 'المطور اسلام' then
-photo = "https://t.me/TU_WM"
+photo = "https://t.me/M_D_O_W/494440"
 local Name = 'اصلام حزين 😔'
 keyboard = {} 
 keyboard.inline_keyboard = {
