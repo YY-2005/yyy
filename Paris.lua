@@ -2968,7 +2968,7 @@ return false
 end
 local Jabwa = LuaTele.getUser(msg.sender.user_id)
 local photo = LuaTele.getUserProfilePhotos(msg.sender.user_id)
-local news = '🌝🖤 انت يا قلبي -› '..msg.Name_Controller
+local news = '℘︙انــت يــا قــلبـي ↜'..msg.Name_Controller
 if photo.total_count > 0 then
 data = {} 
 data.inline_keyboard = {
@@ -2982,7 +2982,7 @@ end
 end
 if text == 'رتبتي' then
 local Jabwa = LuaTele.getUser(msg.sender.user_id)
-local news = '🌝🖤 رتبتك في البوت -› '..msg.Name_Controller
+local news = '℘︙رتبتك في آلبوت ↜'..msg.Name_Controller
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {{text =news,url = "https://t.me/"..Jabwa.username..""}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, news, 'md', false, false, false, false, reply_markup)
